@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using site.Models;
 
 namespace site.Data
 {
@@ -9,5 +10,7 @@ namespace site.Data
             : base(options)
         {
         }
+
+        public DbSet<Customer> Customers { get; set; }
     }
 }
